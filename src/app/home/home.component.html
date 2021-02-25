@@ -1,0 +1,6 @@
+<h1>Address Book</h1>
+<ul>
+    <li *ngFor="let item of data">
+        <a [routerLink]="['/details', item.name.first, item.name.last, item.phone]">{{item.name.last}}, {{item.name.first}}</a>
+    </li>
+</ul>
